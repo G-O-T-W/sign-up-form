@@ -1,0 +1,25 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+}
+
+.sidebar {
+    flex-grow: 1;
+    flex-basis: 33.33%;
+    border: 1px solid green;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: 100vh;
+}
+
+.main-container {
+    flex-grow: 2;
+    flex-basis: 66.67%;
+    border: 1px solid red;
+}
+
