@@ -1,24 +1,121 @@
+@font-face {
+    font-family: myFont;
+    src: url(fonts/chillen-webfont.woff2);
+    src: url(fonts/chillen-webfont.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: logoFont;
+    src: url(fonts/norse-bold_1-webfont.woff2);
+    src: url(fonts/norse-bold_1-webfont.woff);
+}
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/* Custom Styling */
+
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     height: 100vh;
     display: flex;
+    font-family: monospace, 'Courier New', Courier, serif;
+    font-size: 62.5%;
 }
 
 .sidebar {
-    flex-grow: 1;
+    flex: 1;
     flex-basis: 33.33%;
-    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    background: url(assets/sidebar-img.jpg);
+    background-size: cover;
 }
 
-.hero-image img {
-    max-width: 100%;
-    height: 100vh;
+.sidebar-container {
+    flex: 1;
+    margin-top: 18vh;
 }
+
+.overlay {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: rgba(0 0 0/0.2);
+}
+
+.overlay img {
+    height: 12vh;
+    width: auto;
+}
+
+.overlay .textLogo {
+    font-family: logoFont, monospace, serif;
+    font-size: 3.2rem;
+    color: white;
+}
+
+.credit {
+    text-align: center;
+}
+
+.credit p {
+    color: white;
+    font-size: 0.6rem;
+}
+
+.credit p a {
+    color: white;
+}
+
 
 .main-container {
-    flex-grow: 2;
+    flex: 2;
     flex-basis: 66.67%;
     border: 1px solid red;
 }
