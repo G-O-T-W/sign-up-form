@@ -94,10 +94,10 @@ body {
     width: auto;
 }
 
-.overlay .textLogo {
+.overlay .textLogo p{
     font-family: logoFont, monospace, serif;
     font-size: 3.2rem;
-    color: white;
+    color: #fff;
 }
 
 .credit {
@@ -105,18 +105,92 @@ body {
 }
 
 .credit p {
-    color: white;
+    color: #fff;
     font-size: 0.6rem;
 }
 
 .credit p a {
-    color: white;
+    color: #fff;
 }
-
 
 .main-container {
     flex: 2;
     flex-basis: 66.67%;
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffe;
 }
+
+section.description {
+    max-width: 45ch;
+    font-family: myFont, monospace, serif;
+    font-size: 1.2rem;
+    margin-bottom: 2em;
+    padding-left: 2rem;
+}
+
+/* Make input appearance consistent */
+
+button, 
+input {
+    font-family: inherit;
+    font-size: 100%;
+    padding: 0.5em;
+    margin: 0;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input {
+    width: 45ch;
+}
+
+section.form-fields {
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 5px 5px 10px 0 #ccc;
+    margin-bottom: 2em;
+}
+
+form div[class^='row'] {
+    display: flex;
+    gap: 8em;
+    margin-bottom: 1em;
+}
+
+section label{
+    display: block;
+    font-weight: 300;
+}
+
+section.cta-button {
+    padding-left: 2rem;
+}
+
+.cta button {
+    background-color: #4290f5;
+    padding: 1em;
+    width: 30ch;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 8px;
+    box-shadow: 2px 3px 3px 0 #aaa;
+}
+
+.cta button:hover {
+    background-color: #fff;
+    color: #4290f5;
+    font-weight: 700;
+}
+
+.cta p>a {
+    text-decoration: none;
+    color: #4290f5;
+    font-weight: 800;
+}
+
+
+
 
