@@ -147,6 +147,26 @@ input {
     width: 45ch;
 }
 
+input:hover, input:focus {
+    background-color: #eee;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #4290f5; 
+    box-shadow: 2px 3px 3px 0 #aaa;
+}
+
+input[type="password"]:invalid {
+    border: 2px solid red;
+}
+
+input[type="password"]:valid {
+    border: 2px solid green;
+}
+
+
+
 .form-fields {
     padding: 2rem;
     background-color: #fff;
@@ -160,9 +180,28 @@ input {
     margin-bottom: 1em;
 }
 
+span[aria-label='required'] {
+    color: red;
+}
+
 label{
     display: block;
     font-weight: 300;
+}
+
+.form-fields div:last-child {
+    position: relative;
+}
+
+.pwd-requirements {
+    /* position: absolute; */
+    right: 40px;
+}
+
+ul li {
+    list-style-type: none;
+    font-size: 0.4rem;
+    color: red;
 }
 
 .cta {
@@ -198,10 +237,6 @@ label{
     text-decoration: none;
     color: #4290f5;
     font-weight: 800;
-}
-
-span[aria-label='required'] {
-    color: red;
 }
 
 

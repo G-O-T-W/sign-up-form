@@ -40,6 +40,7 @@
                                name="firstName" 
                                maxlength="45"
                                placeholder="Ford"
+                               autofocus
                                required/>
                     </section>
                     <section>
@@ -65,7 +66,7 @@
                         <input type="tel" 
                                id="phone"  
                                name="phone"
-                               placeholder="99999-99999"
+                               placeholder="0123456789"
                                pattern="[0-9]{10}"/>
                     </section>
                 </div>
@@ -75,6 +76,7 @@
                         <input type="password" 
                                id="pwd" 
                                name="pwd"
+                               pattern="^(?=.*[A-Z])(?=.*[1-9]).{8,16}$"
                                required/>
                     </section>
                     <section>
@@ -82,8 +84,17 @@
                         <input type="password" 
                                id="pwdCnf" 
                                name="pwdCnf"
+                               pattern="^(?=.*[A-Z])(?=.*[1-9]).{8,16}$"
                                required/>
                     </section>
+                    <div class="pwd-requirements">
+                        <ul>
+                            <p>Password Requirements</p>
+                            <li>✔ Must be 8-16 characters long</li>
+                            <li>✔ Must include at least one uppercase letter (A-Z)</li>
+                            <li>✔ Must include at least one digit (1-9)</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <section class="cta">
