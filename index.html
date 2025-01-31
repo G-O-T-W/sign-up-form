@@ -13,7 +13,7 @@
             <div class="overlay">
                 <img src="assets/odin-lined.png" alt="website logo">
                 <div class="textLogo">
-                    <p>ODIN</p>
+                    <p>ODIN TREKS</p>
                 </div>
             </div>
         </div>
@@ -24,55 +24,73 @@
         </div>
     </div>
     <div class="main-container">
-
-        <section class="description">This is not a real online service! You
-            know you need something like this in your life to help you
-            realize your deepest dreams. <br/> Sign up <em>now</em> to get started.
+        <section class="description">This is not just another trek company! You
+            crave adventure, and we are here to take you beyond limits.<br/> Sign up <em>now</em> to start your journey.
             <br/>
             <br/>
             You know you want to.
-        </section>
-        <section class="form-fields">
-            <form action="" method="get">
+        </section>   
+        <form action="" method="get" >
+            <section class="form-fields">
                 <div class="row-1">
                     <section>
-                        <label for="firstName">FIRST NAME</label>
-                        <input type="text" id="firstName" name="firstName"/>
+                        <label for="firstName">FIRST NAME<span aria-label="required">*</span></label>
+                        <input type="text" 
+                               id="firstName" 
+                               name="firstName" 
+                               maxlength="45"
+                               placeholder="Ford"
+                               required/>
                     </section>
                     <section>
-                        <label for="secondName">SECOND NAME</label>
-                        <input type="text" id="secondName" name="secondName"/>
+                        <label for="lastName">SECOND NAME</label>
+                        <input type="text" 
+                               id="lastName" 
+                               name="lastName"
+                               placeholder="Prefect"
+                               maxlength="45"/>
                     </section>
                 </div>
                 <div class="row-2">
                     <section>
-                        <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="email"/>
+                        <label for="email">EMAIL<span aria-label="required">*</span></label>
+                        <input type="email" 
+                               id="email" 
+                               name="email" 
+                               placeholder="example@example.com"
+                               required/>
                     </section>
                     <section>
-                        <label for="phoneNumber">PHONE NUMBER</label>
-                        <input type="tel" id="phoneNumber" name="phoneNumber"/>
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" 
+                               id="phone"  
+                               name="phone"
+                               placeholder="99999-99999"
+                               pattern="[0-9]{10}"/>
                     </section>
                 </div>
                 <div class="row-3">
                     <section>
-                        <label for="pwd">PASSWORD</label>
-                        <input type="password" id="pwd" name="pwd"/>
+                        <label for="pwd">PASSWORD<span aria-label="required">*</span></label>
+                        <input type="password" 
+                               id="pwd" 
+                               name="pwd"
+                               required/>
                     </section>
                     <section>
-                        <label for="pwdCnf">CONFIRM PASSWORD</label>
-                        <input type="password" id="pwdCnf" name="pwdCnf"/>
+                        <label for="pwdCnf">CONFIRM PASSWORD<span aria-label="required">*</span></label>
+                        <input type="password" 
+                               id="pwdCnf" 
+                               name="pwdCnf"
+                               required/>
                     </section>
                 </div>
-            </form>
-        </section>
-        <section class="cta-button">
-            <div class="cta">
+            </section>
+            <section class="cta">
                 <button>Create Account</button>
                 <p>Already have an account? <a href="">Log in</a></p>
-            </div>
-        </section>
-    
+            </section>
+        </form>
     </div>
 </body>
 </html>

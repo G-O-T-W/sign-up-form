@@ -125,7 +125,7 @@ body {
 section.description {
     max-width: 45ch;
     font-family: myFont, monospace, serif;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 2em;
     padding-left: 2rem;
 }
@@ -147,25 +147,25 @@ input {
     width: 45ch;
 }
 
-section.form-fields {
+.form-fields {
     padding: 2rem;
     background-color: #fff;
     box-shadow: 5px 5px 10px 0 #ccc;
     margin-bottom: 2em;
 }
 
-form div[class^='row'] {
+.form-fields div[class^='row'] {
     display: flex;
     gap: 8em;
     margin-bottom: 1em;
 }
 
-section label{
+label{
     display: block;
     font-weight: 300;
 }
 
-section.cta-button {
+.cta {
     padding-left: 2rem;
 }
 
@@ -183,6 +183,15 @@ section.cta-button {
     background-color: #fff;
     color: #4290f5;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.cta button:active {
+    background-color: #fff;
+    color: #4290f5;
+    font-weight: 700;
+    box-shadow: 0 0 3px 0 #aaa inset;
+    cursor: pointer;
 }
 
 .cta p>a {
@@ -191,6 +200,8 @@ section.cta-button {
     font-weight: 800;
 }
 
-
+span[aria-label='required'] {
+    color: red;
+}
 
 
